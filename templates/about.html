@@ -1,0 +1,312 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- gallery-full-width30:32-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>گالری|decotik</title>
+<meta name="description" content="Welcome to decotik">
+<meta name="keywords" content="interior, design, services, expert, analysis, structure, luxury, home, kitchen, berdroom, living room, bathroom, kid, office, infrastructure">
+<meta name="author" content="starkteam|aliashtab">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&amp;subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+<link href="{% static 'fonts/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery.datetimepicker.css' %}">
+<link rel="stylesheet" href="{% static 'css/bxslider.css' %}">
+<link rel="stylesheet" href="{% static 'css/color.css' %}" />
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="shortcut icon" href="{% static 'images/icons/favicon.ico' %}">
+<link rel="apple-touch-icon" href="{% static 'images/icons/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/icons/apple-touch-icon-72x72.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/icons/apple-touch-icon-114x114.png' %}">
+</head>
+<body id="top" onLoad="initialize()" class="inner">
+<div id="preloader">
+<img src="{% static 'images/Preloader.gif' %}" alt="Preloader" />
+</div>
+
+<header id="home" class="cbp-af-header header2">
+<div class="header-top BGdark">
+<div class="container">
+<div class="col-md-8 col-sm-12 col-xs-12">
+<span><i class="fa fa-phone"></i><a href="tel:+989124738471">09124738471</a> </span>
+<span><i class="fa fa-envelope-o"></i> <a href="mailto:arashashetab26@gmail.com" title="gmail">arashashetab26@gmail.com</a> </span>
+</div>
+<div class="col-md-4 hidden-sm hidden-xs">
+<ul class="social list-inline pull-right">
+<li><a class="fl" href="#" title="Watch Our gallery"><i class="fa fa-flickr"></i></a></li>
+<li><a class="ig" href="#" title="Watch Our Gallery"><i class="fa fa-instagram"></i></a></li>
+
+</ul>
+</div>
+</div>
+</div>
+
+ <div class="container">
+<div class="col-md-3 col-sm-3 col-xs-12 logo">
+<a title="company Logo" href="{% url 'index' %}"><img class="img-responsive" src="{% static 'images/company12.png' %}" width="200" height="100" alt="Company Logo" /></a>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12 cbp-af-inner rightnav">
+<nav class="navbar navbar-default">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="nav navbar-nav">
+<li class="sub"><a href="{% url 'index' %}" title="خانه">خانه</a>
+
+<ul class="sub-nav">
+<li><a href="{% url 'index' %}" title="خانه">خانه</a></li>
+</ul>
+
+</li>
+<li class="sub"><a href="{% url 'servicesview' %}" title="خدمات">خدمات</a>
+
+<ul class="sub-nav">
+<li><a href="{% url 'servicesview' %}" title="خدمات">خدمات</a></li>
+</ul>
+
+</li>
+<li class="active sub"><a href="{% url 'galleryview' %}" title="گالری">گالری</a>
+
+<ul class="sub-nav">
+<li><a href="{% url 'galleryview' %}" title="گالری">گالری</a></li>
+</ul>
+
+</li>
+<li class="sub"><a href="{% url 'aboutusview' %}" title="درباره ما">درباره ما</a>
+
+<ul class="sub-nav">
+<li><a href="{% url 'aboutusview' %}" title="درباره ما">درباره ما</a></li>
+</ul>
+
+</li>
+
+
+<li class="sub"><a href="{% url 'contactview' %}" title="تماس با ما">تماس با ما</a>
+
+<ul class="sub-nav">
+<li><a href="{% url 'contactview' %}" title="تماس با ما">تماس با ما</a></li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+</nav>
+</div>
+</div>
+</header>
+
+
+<section class="breadcrumbs breadcrumbs2 about wow fadeInDown" data-wow-duration="0.25s" data-wow-delay="0.45s">
+<div class="boxedeb">
+<div class="container page-block-small">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<h2>درباره ما</h2>
+<span class="line"></span>
+<div class="rightText">
+<a href="{% url 'index' %}" title="Home">Home</a> / About Us
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="page-block-large">
+<div class="container">
+<div class="col-md-6 col-sm-6 col-xs-12 content-box wow fadeInLeft" data-wow-duration="0.50s" data-wow-delay="0.50s">
+<img class="img-responsive" src="{% static 'images/about.jpg' %}" alt="About Striking" width="725" height="475" />
+</div>
+<div class="col-md-6 col-sm-6 col-xs-12 content-box wow fadeInRight" data-wow-duration="0.50s" data-wow-delay="0.50s">
+<p class="big">Maecenas molestie pulas molestie pulvinar augue. Ut quis sem ut neque gravida ullamcorper. Nunc nisi risus, accumsan nec elit ac, molvinar augue. Ut quis sem ut neque gravida ullamcorper.</p>
+<hr>
+<p>شرکت وستا سیستم، یک شرکت Digital Enterprise با ارائه‌ی خدمات در حیطه‌های وب و اپلیکیشن است که برای اولین بار در سال 1390 شروع به کار کرد. این شرکت در طول فعالیت بیش از یک دهه‌‌ای خود توانسته که از فراز و نشیب‌های فراوانی عبور نماید. در ابتدای آغاز دهه‌ی 90، شرکت وستا سیستم، فعالیت خود را بر راه‌اندازی انواع استارت‌آپ‌ها متمرکز کرده بود. تقریبا در همان دوران بود که شرکت وستا سیستم توانست خود را در زمره‌ی اولین استارت‌آپ‌هایی قرار دهد که در زمینه‌ی خرید گروهی فعالیت می‌کنند. شرکت وستا سیستم با گذشت زمان، توانست اعتماد بسیاری از نهادهای رسمی و معتبر موجود در کشور را کسب نماید. با پیشرفت خدمات شرکت، دانشکده‌ی فنی مهندسی دانشگاه باهنر شیراز به عنوان یک پشتوانه‌ی قوی و معتبر برای شرکت وستا سیستم به توسعه‌ی خدمات این شرکت در حیطه‌ی طراحی و تولید انواع نرم‌افزارهای تحت وب و موبایل، معرفی شد. این شرکت در سال 1397 توانست که عنوان شرکت دانش بنیان را با به دست آوردن مجوز رسمی از معاونت علمی پژوهشی ریاست جمهوری، کسب نماید. امروزه شرکت وستا سیستم با توسعه‌ی تیم خود توانسته که پروژه‌های مهمی را اجرا کرده و یا در دست اجرا داشته باشد. با توجه به آن که وستا سیستم اهداف بزرگی را برای آینده‌ی خود در نظر گرفته‌است، هر روزه در حال بهبود کیفیت خدمات خود و تیمش است. برای آن که بتوانید از خدمات و امکانات شرکت وستا مطلع شوید می‌توانید هم‌اکنون با ما تماس بگیرید.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="staff page-block-large BGlight">
+<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12">
+<div class="section-heading wow fadeInDown" data-wow-duration="0.50s" data-wow-delay="0.50s">
+<h2><i class="fa fa-users square BGsec"></i>متخصص های ما<small>تیم پشت موفقیت ما</small></h2>
+<a class="btn btn-primary" href="team1.html" title="See All">See All <i class="fa fa-chevron-right"></i></a>
+<div class="clear"></div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-6 col-xs-6 wow zoomIn" data-wow-duration="0.50s" data-wow-delay="0.75s">
+<div class="team square">
+<div class="img">
+<a href="team-single.html" title="Person Name"><img class="img-responsive" src="{% static 'images/people/square/01.jpg' %}" alt="img"></a>
+</div>
+
+<div class="info">
+<a href="team-single.html" title="Person Name"><h5>Jen Doe<small>Founder</small></h5></a>
+<ul class="social list-inline">
+<li><a href="#" title="Follow Us on Facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" title="Follow Us on Twitter"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" title="Watch Our Videos"><i class="fa fa-youtube-play"></i></a></li>
+<li><a href="#" title="Watch Our gallery"><i class="fa fa-flickr"></i></a></li>
+<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#" title="Follow Us on vk"><i class="fa fa-vk"></i></a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 wow zoomIn" data-wow-duration="0.50s" data-wow-delay="1s">
+<div class="team square">
+<div class="img">
+<a href="team-single.html" title="Person Name"><img class="img-responsive" src="{% static 'images/people/square/02.jpg' %}" alt="img"></a>
+</div>
+
+<div class="info">
+<a href="team-single.html" title="Person Name"><h5>John Doe<small>CEO</small></h5></a>
+<ul class="social list-inline">
+<li><a href="#" title="Follow Us on Facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" title="Follow Us on Twitter"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" title="Watch Our Videos"><i class="fa fa-youtube-play"></i></a></li>
+<li><a href="#" title="Watch Our gallery"><i class="fa fa-flickr"></i></a></li>
+<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#" title="Follow Us on vk"><i class="fa fa-vk"></i></a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-6 wow zoomIn" data-wow-duration="0.50s" data-wow-delay="1.25s">
+<div class="team square">
+<div class="img">
+<a href="team-single.html" title="Person Name"><img class="img-responsive" src="{% static 'images/people/square/03.jpg' %}" alt="img"></a>
+</div>
+
+<div class="info">
+<a href="team-single.html" title="Person Name"><h5>Jeny Doe<small>Managing Director</small></h5></a>
+<ul class="social list-inline">
+<li><a href="#" title="Follow Us on Facebook"><i class="fa fa-facebook"></i></a></li>
+<li><a href="#" title="Follow Us on Twitter"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" title="Watch Our Videos"><i class="fa fa-youtube-play"></i></a></li>
+<li><a href="#" title="Watch Our gallery"><i class="fa fa-flickr"></i></a></li>
+<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+<li><a href="#" title="Follow Us on vk"><i class="fa fa-vk"></i></a></li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer2 BGdark page-block-small">
+<div class="container">
+<div class="col-md-12 col-sm-12 col-xs-12 wow fadeInDown" data-wow-duration="0.50s" data-wow-delay="0.50s">
+<img class="img-responsive pull-left" src="{% static 'images/company12.png' %}" alt=""/>
+<ul class="social list-inline pull-right">
+<li><a class="ig" href="#" title="Watch Our instagram" data-toggle="tooltip" data-placement="top"><i class="fa fa-instagram"></i></a></li>
+</ul>
+<div class="clear"></div>
+<hr class="light">
+</div>
+<div class="col-md-5 col-sm-12 col-xs-12 content-box wow fadeInUp" data-wow-duration="0.50s" data-wow-delay="0.50s" style="direction: rtl">
+<h5>درباره ما</h5>
+<p style="direction: rtl"> اولین بار در سال 1390 شروع به کار کرد. این شرکت در طول فعالیت بیش از یک دهه‌‌ای خود توانسته که از فراز و نشیب‌های فراوانی عبور نماید. در ابتدای آغاز دهه‌ی 90، شرکت وستا سیستم، فعالیت خود را بر راه‌اندازی انواع استارت‌آپ‌ها متمرکز کرده بود. تقریبا در همان دوران بود که شرکت وستا سیستم توانست خود را در زمره‌ی اولین استارت‌آپ‌هایی قرار دهد که در زمینه‌ی خرید گروهی فعالیت می‌کنند. شرکت وستا سیستم با گذشت زمان، توانست اعتماد بسیاری از نهادهای رسمی و معتبر موجود در کشور را کسب نماید. با پیشرفت خدمات شرکت، دانشکده‌ی فنی مهندسی دانشگاه باهنر شیراز به عنوان یک پشتوانه‌ی قوی و معتبر برای شرکت وستا سیستم به توسعه‌ی خدمات این شرکت د</p>
+<a href="{% url 'aboutusview' %}" title="About Company">بیشتر <i class="fa fa-chevron-circle-right"></i></a>
+</div>
+    
+<div class="col-md-4 col-sm-6 col-xs-12 content-box wow fadeInUp" data-wow-duration="0.50s" data-wow-delay="0.75s" style="direction: rtl">
+<h5>لینک های سریع</h5>
+<ul>
+<li><a href="{% url 'index' %}" title="Portfolio">خانه</a></li>
+<li><a href="{% url 'galleryview' %}" title="Gallery Full Width">گالری</a></li>
+<li><a href="{% url 'servicesview' %}" title="Blog">خدمات</a></li>
+<li><a href="{% url 'contactview' %}">تماس با ما</a></li>
+<li><a href="{% url 'aboutusview' %}" title="Contact">درباره ما</a></li>
+</ul>
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12 content-box wow fadeInUp" data-wow-duration="0.50s" data-wow-delay="1.25s" style="direction: rtl">
+<h5>با ما در تماس باشید</h5>
+<div class="office">
+<span><i class="fa fa-map-marker"></i>شهر تهران<br>
+در هر نقطه ای از ایران.</span>
+<span><i class="fa fa-phone"></i><a herf="tel:+989124738471">09124738471</a></span>
+<span><i class="fa fa-envelope-o"></i> <a href="mailto:arashashetab26@gmail.com" title="gmail">arashashetab26@gmail.com</a></span>
+</div>
+</div>
+<div class="clear"></div>
+<hr class="light">
+
+<div class="copyright wow fadeInUp" data-wow-duration="0.50s" data-wow-delay="0.50s" data-wow-offset="0">
+<div class="col-md-5 col-sm-6 col-xs-12">
+<p><strong><a href="tel:+989035494695">starkteam طراحی شده توسط</a></p>
+</div>
+<div class="col-md-7 col-sm-6 col-xs-12 text-right">
+<ul class="list-inline">
+<li><a target="_blank" href="https://www.youtube.com/@starkteam" title="Terms & Conditions">starkteamکانال یوتیوب</a></li>
+<li><a target="_blank" href="https://github.com/aliashtab77" title="Privacy Policy">starkteam github</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<a href="#top" class="top"><i class="fa fa-angle-up fa-lg"></i></a>
+
+<script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'js/jquery.ui.touch-punch.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/classie.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.countTo.js' %}"></script>
+<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.datetimepicker.js' %}"></script>
+<script src="{% static 'js/placeholders.js' %}"></script>
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/master.js' %}"></script>
+</body>
+
+<!-- about227:48-->
+</html>
